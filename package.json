@@ -1,8 +1,8 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
+  "name": "right-click-search-kdb",
+  "displayName": "Right Click Search KdB",
   "version": "0.0.1",
-  "description": "[description]",
+  "description": "Add KdB search to context menu.",
   "private": true,
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
