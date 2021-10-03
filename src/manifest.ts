@@ -6,8 +6,6 @@ import { isDev, port, r } from '../scripts/utils'
 export async function getManifest() {
   const pkg = await fs.readJSON(r('package.json')) as typeof PkgType
 
-  // update this file to update this manifest.json
-  // can also be conditional based on your need
   const manifest: Manifest.WebExtensionManifest = {
     manifest_version: 2,
     name: pkg.displayName || pkg.name,
@@ -34,12 +32,12 @@ export async function getManifest() {
     permissions: [
       'tabs',
       'storage',
-      'activeTab',
+      'contextMenus',
       'http://*/',
       'https://*/',
     ],
     content_scripts: [{
-      matches: ['http://*/*', 'https://*/*'],
+      matches: ['https://kdb.tsukuba.ac.jp/*'],
       js: ['./dist/contentScripts/index.global.js'],
     }],
     web_accessible_resources: [
