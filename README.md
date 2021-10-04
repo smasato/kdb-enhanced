@@ -2,6 +2,12 @@
 
 Make your KdB a little bit more comfortable.
 
+### Features
+
+- [ ] Select a course number to view the syllabus.
+- [ ] Make the course number in the syllabus a link to the syllabus page
+- [ ] Press Enter to search
+
 ### Development
 
 ```bash
