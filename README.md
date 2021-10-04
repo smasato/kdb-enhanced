@@ -1,6 +1,6 @@
-# Right Click Search KdB
+# KdB Enhanced
 
-Add KdB search to context menu.
+Make your KdB a little bit more comfortable.
 
 ### Development
 

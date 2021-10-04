@@ -1,8 +1,8 @@
 {
-  "name": "right-click-search-kdb",
-  "displayName": "Right Click Search KdB",
+  "name": "kdb-enhanced",
+  "displayName": "KdB Enhanced",
   "version": "0.0.1",
-  "description": "Add KdB search to context menu.",
+  "description": "Make your KdB a little bit more comfortable.",
   "private": true,
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
