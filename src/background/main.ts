@@ -1,5 +1,3 @@
-import { time } from 'console'
-
 // only on dev mode
 if (import.meta.hot) {
   // @ts-expect-error for background HMR
@@ -17,7 +15,7 @@ browser.runtime.onInstalled.addListener((): void => {
   })
 })
 
-browser.contextMenus.onClicked.addListener((info, tab): void => {
+browser.contextMenus.onClicked.addListener((info): void => {
   if (info.menuItemId === 'kdb') {
     const courseCode = info.selectionText as string
     const now = new Date()
